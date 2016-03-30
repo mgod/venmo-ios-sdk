@@ -10,11 +10,11 @@ Pod::Spec.new do |s|
   s.license       = { :type => 'MIT', :file => 'LICENSE' }
   s.author        = { "Venmo" => "developers@venmo.com" }
   s.social_media_url = 'https://twitter.com/venmo'
-  s.platform      = :ios, '7.0'
+  s.platform      = :ios, '7.1'
   s.requires_arc  = true
   s.source        =  { :git => "https://github.com/venmo/venmo-ios-sdk.git", :tag => "v#{s.version}" }
   s.source_files  = 'venmo-sdk/**/*.{h,m}'
-  s.dependency 'VENCore', '~> 3.1.1'
+  s.dependency 'VENCore', '~> 3.1.3'
   s.dependency 'SSKeychain', '~> 1.2.3'
-  s.dependency 'CMDQueryStringSerialization', '~> 0.2.0'
+  s.dependency 'CMDQueryStringSerialization', '~> 0.4'
 end
